@@ -1,16 +1,20 @@
 @import url('https://fonts.googleapis.com/css2?family=Cormorant:ital,wght@0,300..700;1,300..700&display=swap');
 
 body {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
     font-family: "Cormorant", serif;
     background-color: rgb(253, 247, 236);
-    max-width: 100rem;
 }
 
+.wrapper {
+    max-width: 100rem;
+    margin: 0 auto;
+}
+
+
+            /* Navigation Bar */
+
 .navbar {
-    margin: 1.5rem 0 0 3rem;
+    margin: 1.5rem 0 0 2rem;
 }
 
 .navbar h1,
@@ -53,25 +57,34 @@ a.active {
     border-bottom: 1px solid #818181;
 }
 
-main {
-    padding: 2rem;
+
+            /* Gallery */
+
+.work {
+    padding: 0 .5rem 0 1rem;
 }
 
-img {
-    width: 100%;
-    height: 350px;
-    max-width: 600px;
-    transition: .2s ease-in-out;
-}
-
-img:hover {
-    opacity: .5;
-}
-
-.work div {
+.card {
     display: inline-block;
-    padding: 1rem 1rem;
-    width: 40%;
+    width: 49.5%;
+    padding: 1rem;
+    box-sizing: border-box;
+}
+
+.card img {
+    width: 100%;
+    height: 400px;
+    transition: .2s ease-in-out;
+    object-fit: cover;
+}
+
+.card img:hover {
+    opacity: .8;
+}
+
+.card h2 {
+    margin: 8px 0 16px 5px;
+    font-weight: 400;
 }
 
 .work p {
@@ -80,18 +93,31 @@ img:hover {
     margin-top: 0;
 }
 
+
+            /* About */
+
 .about {
-    width: 300px;
-    margin-top: 5rem;
-    margin-left: 10rem;
-    font-size: 1.5em;
+    width: 40%;
+    min-width: 600px;
+    margin: 5rem 0 5rem 12rem;
+}
+
+.about h3 {
+    font-size: 2em;
+}
+
+.underline {
+    border-bottom: 2px solid #333;
+    display: inline-block;
+    padding-bottom: .5rem;
+    margin-top: 0;
 }
 
 .contact {
-    margin: 5rem 10rem 3rem;
-    font-size: 1.5em;
+    margin: 5rem 0;
 }
 
 .contact p {
+    font-size: 1.4em;
     margin: 0;
 }
