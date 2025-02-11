@@ -1,1 +1,1 @@
-# artist-portfolio
+# blog-post
